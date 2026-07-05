@@ -1,4 +1,19 @@
-#lung-and-colon-cancer-histopathological-images
-Here is the direct link to the dataset:
+# LC25000 Histopathology Dataset Preprocessing Pipeline
 
-**[LC25000 Lung and Colon Cancer Histopathological Images Dataset on Kaggle](https://www.kaggle.com/datasets/andrewmvd/lung-and-colon-cancer-histopathological-images)**
+This repository contains the standalone, production-grade data loader and data augmentation preprocessing module configured for multi-class lung and colon cancer histopathology classification workflows.
+
+## 📁 Dataset Reference
+The pipeline interfaces directly with the benchmark **[LC25000 Lung and Colon Cancer Histopathological Images Dataset](https://www.kaggle.com/datasets/andrewmvd/lung-and-colon-cancer-histopathological-images)**.
+
+## ⚙️ Configuration Blueprint
+* **Target Spatial Dimensions:** $300 \times 300 \times 3$ pixels
+* **Intensity Scale:** Normalized to $[0, 1]$ intensity range
+* **Stain-Invariant Augmentations:** Random rotations, spatial flips, zoom, shear distortions, and brightness perturbations
+* **Data Split Topology:** **85% Training** data generator and **15% Validation** data generator split
+
+## 🚀 Usage Guide
+
+1. Clone this repository:
+   ```bash
+   git clone [https://github.com/your-username/dataset-repo.git](https://github.com/your-username/dataset-repo.git)
+   cd dataset-repo
